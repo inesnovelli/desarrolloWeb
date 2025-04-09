@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo</title>
+  <link rel="icon" type="image/png" href="../images/logoverde.png">
+  <link rel="stylesheet" href="../CSS/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header id="page">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <nav id="menu">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="iniciarsesion.html">Iniciar Sesión</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="cuidado.html">Cuidado</a></li>
+        <li><a href="informacion.html">Información</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-catalog">
+
+    <section class="intern-nav">
+      <section class="search-container">
+        <form id="searchForm">
+          <input type="text" id="search" name="query" placeholder="Buscar..." oninput="filterCatalog()">
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+
+      <nav class="catalogo">
+        <h1>Bonet</h1>
+        <ul>
+          <li><a href="#cookies">cookies</a></li>
+          <li><a href="#tortas">tortas</a></li>
+          <li><a href="#tartas">tartas</a></li>
+          <li><a href="#cuchareables">cuchareables</a></li>
+          <li><a href="#bocados">bocados</a></li>
+          <li><a href="#shots">shots</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="cookies" class="gallery-catalog">
+      <h2>Cookies</h2>
+      <div class="product-slider">
+        <div class="product-card">
+          <img src="../images/cookieClasica.jpg" alt="Cookie Clásica">
+          <div class="product-info">
+            <p class="product-name">Cookie Clásica</p>
+            <p class="product-price">$3.200</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/cookieRedVelvet.jpg" alt="Cookie Red Velvet">
+          <div class="product-info">
+            <p class="product-name">Cookie Red Velvet</p>
+            <p class="product-price">$3.700</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/cookieKinder.jpg" alt="Cookie Kinder">
+          <div class="product-info">
+            <p class="product-name">Cookie Kinder</p>
+            <p class="product-price">4.400</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tortas" class="gallery-catalog">
+      <h2>Tortas</h2>
+      <div class="product-slider">
+        <div class="product-card">
+          <img src="../images/chocotorta.jpg" alt="Chocotorta">
+          <div class="product-info">
+            <p class="product-name">Chocotorta</p>
+            <p class="product-price">$38.000</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/chocoreo.jpg" alt="Chocoreo">
+          <div class="product-info">
+            <p class="product-name">Chocoreo</p>
+            <p class="product-price">$40.000</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/brownie.jpg" alt="Brownie">
+          <div class="product-info">
+            <p class="product-name">Brownie</p>
+            <p class="product-price">$32.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tartas" class="gallery-catalog">
+      <h2>Tartas</h2>
+      <div class="product-slider">
+        <div class="product-card">
+          <img src="../images/tartaBoneffe.jpg" alt="Tarta Bonoffe ">
+          <div class="product-info">
+            <p class="product-name">Tarta Bonoffe</p>
+            <p class="product-price">$26.000</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/tortatofi.jpg" alt="Tarta Tofi">
+          <div class="product-info">
+            <p class="product-name">Tarta Tofi</p>
+            <p class="product-price">$28.000</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/tartaFrutilla.jpg" alt="Tarta de Frutilla">
+          <div class="product-info">
+            <p class="product-name">Tarta de Frutilla</p>
+            <p class="product-price">$28.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cuchareables" class="gallery-catalog">
+      <h2>Cuchareables</h2>
+      <div class="product-slider">
+        <div class="product-card">
+          <img src="../images/cuchareableComun.jpg" alt="Dulce de leche">
+          <div class="product-info">
+            <p class="product-name">Dulce de Leche</p>
+            <p class="product-price">$10.000</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/cuchareableOreo.jpg" alt="Oreo">
+          <div class="product-info">
+            <p class="product-name">Oreo y Nutella</p>
+            <p class="product-price">$11.500</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/cuchareableComun.jpg" alt="Nutella">
+          <div class="product-info">
+            <p class="product-name">Nutella</p>
+            <p class="product-price">$11.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bocados" class="gallery-catalog">
+      <h2>Bocados</h2>
+      <div class="product-slider">
+        <div class="product-card">
+          <img src="../images/alfajorMaicena.jpg" alt="Alfajores de maicena">
+          <div class="product-info">
+            <p class="product-name">Alfajor de maicena</p>
+            <p class="product-price">$8.000 (x6)</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/alfacoco.jpg" alt="Alfajores de coco">
+          <div class="product-info">
+            <p class="product-name">Alfajor de coco</p>
+            <p class="product-price">$10.000 (x6)</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/alfajorNuez.jpg" alt="Alfajores de nuez">
+          <div class="product-info">
+            <p class="product-name">Alfajor de nuez</p>
+            <p class="product-price">$12.000 (x6)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shots" class="gallery-catalog">
+      <h2>Shots</h2>
+      <div class="product-slider">
+        <div class="product-card">
+          <img src="../images/shotLemmon.jpg" alt="Shot de Lemon pie">
+          <div class="product-info">
+            <p class="product-name">Shot de Lemmon Pie</p>
+            <p class="product-price">$38.000 (x12)</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/shotFrutilla.jpg" alt="Shot de frutillas">
+          <div class="product-info">
+            <p class="product-name">Shot de frutilla</p>
+            <p class="product-price">$38.000 (x12)</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../images/shotChocotorta.jpg" alt="Shot de Chocotorta">
+          <div class="product-info">
+            <p class="product-name">Shot de chocotorta</p>
+            <p class="product-price">$38.000 (x12)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-content">
+    <div class="pedido">
+      <a href="https://wa.link/yrarl7">
+        <section>
+          <img src="../icons/bolsa-de-la-compra.png" alt="LogoBolsa">
+          <p>Hacé tu pedido</p>
+        </section>
+      </a>
+    </div>
+
+    <section id="info-footer">
+      <section class="logomarca-footer">
+        <img src="../images/logo.png" alt="logomarca">
+      </section>
+      <section class="socialMedia">
+        <a href="https://wa.link/yrarl7"><img src="../icons/whatsapp.png" alt="whatsapp"></a>
+        <a href="https://www.instagram.com/bonet.patisserie?igsh=eDZldWRtZWNwcjh1"><img src="../icons/instagram.png" alt="instagram"></a>
+        <a href="https://www.tiktok.com/@bonet.patisserie?_t=ZM-8vMdFCr2xPB&_r=1"><img src="../icons/tik-tok.png" alt="tiktok"></a>
+      </section>
+    </section>
+
+    <p id="derechos">&copy; 2025 BonetPatisserie. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

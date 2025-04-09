@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IniciarSesión</title>
+  <link rel="icon" type="image/png" href="../images/logoverde.png">
+  <link rel="stylesheet" href="../CSS/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body id="log-in">
+  <header id="page">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <nav id="menu">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="iniciarsesion.html">Iniciar Sesión</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="cuidado.html">Cuidado</a></li>
+        <li><a href="informacion.html">Información</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="form">
+    <h1>INICIAR SESIÓN</h1>
+    <section class="formulario">
+      <form action="/login" method="post">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+
+        <a href="#">¿Olvidaste tu contraseña?</a>
+
+        <button type="submit">Ingresar</button>
+      </form>
+
+      <p>¿Todavía no tienes cuenta? <a href="#">Regístrate</a></p>
+    </section>
+  </main>
+
+  <footer class="footer-content">
+    <div class="pedido">
+      <a href="https://wa.link/yrarl7">
+        <section>
+          <img src="../icons/bolsa-de-la-compra.png" alt="LogoBolsa">
+          <p>Hacé tu pedido</p>
+        </section>
+      </a>
+    </div>
+
+    <section id="info-footer">
+      <section class="logomarca-footer">
+        <img src="../images/logo.png" alt="logomarca">
+      </section>
+
+      <section class="socialMedia">
+        <a href="https://wa.link/yrarl7"><img src="../icons/whatsapp.png" alt="whatsapp"></a>
+        <a href="https://www.instagram.com/bonet.patisserie?igsh=eDZldWRtZWNwcjh1"><img src="../icons/instagram.png" alt="instagram"></a>
+        <a href="https://www.tiktok.com/@bonet.patisserie?_t=ZM-8vMdFCr2xPB&_r=1"><img src="../icons/tik-tok.png" alt="tiktok"></a>
+      </section>
+    </section>
+
+    <p id="derechos">&copy; 2025 BonetPatisserie. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

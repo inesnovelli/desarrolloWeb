@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información</title>
+  <link rel="icon" type="image/png" href="../images/logoverde.png">
+  <link rel="stylesheet" href="../CSS/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="page">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <nav id="menu">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="iniciarsesion.html">Iniciar Sesión</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="cuidado.html">Cuidado</a></li>
+        <li><a href="informacion.html">Información</a></li>
+      </ul>
+    </nav>
+
+    <section id="encabezado">
+      <section class="search-container">
+        <form id="searchForm">
+          <input type="text" id="search" name="query" placeholder="Buscar..." oninput="filterCatalog()">
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+      <h1>Información</h1>
+    </section>
+  </header>
+
+  <main id="information">
+    <div id="information-text">
+      <div class="text-box-info">
+        <img src="../images/cuadro.jpg" alt="">
+        <h2>Anticipación</h2>
+        <p>Los pedidos deben realizarse con un mínimo de 72 hs de anticipación para tortas y 48hs para bocados, siempre sujeto a disponibilidad. No para el mismo día.</p>
+      </div>
+
+      <div class="text-box-info">
+        <img src="../images/cuadro.jpg" alt="">
+        <h2>Reserva</h2>
+        <p>Para que el pedido quede confirmado se debe abonar el 50% del mismo. Si necesitas cancelar, podés hacerlo hasta 72hs antes y se devolverá el total de la seña, en caso contrario, la misma no se devuelve, ya que el producto comenzó su proceso de elaboración.</p>
+      </div>
+
+      <div class="text-box-info">
+        <img src="../images/cuadro.jpg" alt="">
+        <h2>Pago</h2>
+        <p>El pago puede realizarse en efectivo o transferencia bancaria.</p>
+      </div>
+    </div>
+
+    <div id="information-text2">
+      <div class="text-box-info">
+        <img src="../images/cuadro.jpg" alt="">
+        <h2>Retiros</h2>
+        <p>Los pedidos pueden retirarse coordinando previamente por:</p>
+        <p class="resaltado">Gonnet (488 e/132 bis y 133 nro 3767) o La Plata (46 e/13 y 14 nro 913)</p>
+      </div>
+
+      <div class="text-box-info">
+        <img src="../images/cuadro.jpg" alt="">
+        <h2>Envios</h2>
+        <p>Los envíos se realizan únicamente para cookies y bocados, NO para tortas, de 13 a 17hs con un costo adicional.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-content">
+    <div class="pedido">
+      <a href="https://wa.link/yrarl7">
+        <section>
+          <img src="../icons/bolsa-de-la-compra.png" alt="LogoBolsa">
+          <p>Hacé tu pedido</p>
+        </section>
+      </a>
+    </div>
+
+    <section id="info-footer">
+      <section class="logomarca-footer">
+        <img src="../images/logo.png" alt="logomarca">
+      </section>
+
+      <section class="socialMedia">
+        <a href="https://wa.link/yrarl7"><img src="../icons/whatsapp.png" alt="whatsapp"></a>
+        <a href="https://www.instagram.com/bonet.patisserie?igsh=eDZldWRtZWNwcjh1"><img src="../icons/instagram.png" alt="instagram"></a>
+        <a href="https://www.tiktok.com/@bonet.patisserie?_t=ZM-8vMdFCr2xPB&_r=1"><img src="../icons/tik-tok.png" alt="tiktok"></a>
+      </section>
+    </section>
+
+    <p id="derechos">&copy; 2025 BonetPatisserie. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
