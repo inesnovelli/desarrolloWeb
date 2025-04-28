@@ -1,18 +1,18 @@
-@charset "UTF-8";
-/* Error: Can't find stylesheet to import.
- *    ,
- * 41 | @import 'layout/grid';
- *    |         ^^^^^^^^^^^^^
- *    '
- *   scss\main.scss 41:9  root stylesheet */
+/* Error: The target selector was not found.
+ * Use "@extend .btn !optional" to avoid this error.
+ *   ,
+ * 4 |     @extend .btn;
+ *   |     ^^^^^^^^^^^^
+ *   '
+ *   SCSS\components\buttons\_search-button.scss 4:5  root stylesheet */
+
 body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
   white-space: pre;
   display: block;
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    ╷\a 41 │ @import 'layout/grid';\d\a    │         ^^^^^^^^^^^^^\a    ╵\a   scss\\main.scss 41:9  root stylesheet";
+  content: 'Error: The target selector was not found.\aUse "@extend .btn !optional" to avoid this error.\a   \2577 \a 4 \2502      @extend .btn;\d\a   \2502      ^^^^^^^^^^^^\a   \2575 \a   SCSS\\components\\buttons\\_search-button.scss 4:5  root stylesheet';
 }
-
-/*# sourceMappingURL=main.css.map */
