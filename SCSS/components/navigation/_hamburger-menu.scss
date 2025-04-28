@@ -1,0 +1,58 @@
+/*Hamburguer Menu*/
+
+.hamburger-menu {
+    &__toggle {
+      display: none;
+    }
+  
+    &__button {
+      display: block;
+      cursor: pointer;
+      font-size: 30px;
+      user-select: none;
+      position: fixed;
+      left: 20px;
+      z-index: 101;
+      color: rgb(7, 7, 7);
+    }
+  
+    &__nav {
+      ul {
+        display: none;
+        list-style: none;
+        background: #c8cda4;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 200px;
+        height: 100vh;
+        padding: 70px 20px 20px;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 100;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  
+        a {
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 300;
+          font-size: 12px;
+          letter-spacing: 1.874px;
+          padding: 10px;
+          display: block;
+          border-radius: 4px;
+  
+          &:hover {
+            background: #bcc293;
+          }
+        }
+      }
+    }
+  
+    &__toggle:checked ~ &__nav ul {
+      display: flex;
+      left: 0;
+    }
+}

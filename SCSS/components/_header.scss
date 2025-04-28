@@ -1,0 +1,25 @@
+/* header */
+
+.header {
+    padding: 15px 20px;
+    position: relative;
+  
+    &--home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #c8cda4;
+      height: 20vh;
+      min-height: 60px;
+      max-height: 120px;
+      width: 100%;
+      padding: 0 5%;
+  
+      .header-logo {
+        margin-top: 35px;
+        width: 300px;
+        height: auto;
+        transform: rotate(0.3deg);
+      }
+    }
+  }

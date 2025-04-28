@@ -1,0 +1,38 @@
+/* Botón base */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  
+    /* Variantes */
+    &--primary {
+      background: #bcc293;
+      color: white;
+  
+      &:hover {
+        background: #a86b6b;
+      }
+    }
+  
+    &--secondary {
+      background-color: #da959d;
+      color: white;
+  
+      &:hover {
+        background-color: #bd7d7d;
+      }
+    }
+  
+    &--small {
+      padding: 8px 12px;
+      font-size: 0.7rem;
+    }
+}

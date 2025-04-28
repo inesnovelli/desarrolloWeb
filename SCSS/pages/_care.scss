@@ -1,0 +1,26 @@
+/* care */
+
+.care-page {
+    .care-title {
+      color: #bcc293;
+      font-size: 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f5f5f5;
+      z-index: 50;
+      padding: 45px;
+      text-align: center;
+    }
+  
+    .instructions-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 500px);
+      justify-content: center;
+      gap: 30px;
+      margin: 30px auto;
+      padding: 90px;
+      max-width: 100px;
+    }
+  }

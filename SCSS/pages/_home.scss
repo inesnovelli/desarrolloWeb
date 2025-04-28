@@ -1,0 +1,23 @@
+/* home */
+
+.home-page {
+    .hero-section {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .hamburger-home {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      top: 5px;
+      left: 5px;
+      z-index: 20;
+    }
+  }

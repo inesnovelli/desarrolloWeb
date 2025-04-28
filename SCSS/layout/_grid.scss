@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    gap: 20px;
+  
+    &--2col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    &--3col {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    &--auto {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }

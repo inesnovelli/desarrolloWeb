@@ -1,0 +1,23 @@
+/* Estilos base */
+body {
+    background-color: #F7F6F6;
+    color: #212529;
+  }
+  
+  /* Enlaces */
+  a {
+    color: #bd7d7d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #a86b6b;
+    }
+  }
+  
+  /* Imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
