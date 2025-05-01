@@ -1,0 +1,39 @@
+@use '../abstracts/variables.scss' as v;
+
+/*search button*/
+.search-container {
+    margin: 20px 20px 0 auto;
+    padding: 0;
+    width: fit-content; 
+
+    #searchForm {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+
+        input[type="text"] {
+            width: 180px;
+            padding: 10px 15px;
+            border: 1px solid v.$color-borde;
+            border-radius: 30px;
+            font-size: 14px;
+        }
+
+        button[type="submit"] {
+            background: v.$color-green-light;
+            color: v.$color-texto-white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: v.$texto-trasnform;
+            cursor: pointer;
+
+            &:hover {
+                background: v.$color-boton;
+            }
+        }
+    }
+}

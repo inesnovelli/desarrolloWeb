@@ -1,0 +1,4 @@
+@use '../abstracts/variables.scss' as v;
+body {
+    background-color: v.$color-fondo;
+}

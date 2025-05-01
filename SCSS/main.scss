@@ -1,0 +1,20 @@
+// 1. Abstracts 
+@use 'abstracts/variables';
+
+// 2. Base (estilos base/reset)
+@use 'base/base';
+@use 'base/reset';
+
+// 3. Componentes
+@use 'components/search-buttons';
+
+// 4. Layouts
+@use 'layout/footer';
+@use 'layout/header';
+
+// 5. Páginas específicas
+@use 'pages/inicio';
+@use 'pages/iniciarsesion';
+@use 'pages/catalogo';
+@use 'pages/cuidado';
+@use 'pages/informacion';

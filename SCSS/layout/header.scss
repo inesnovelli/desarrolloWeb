@@ -1,0 +1,78 @@
+@use '../abstracts/variables.scss' as v;
+
+header {
+    padding: 15px 20px;
+    position: relative;
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        color: rgb(7, 7, 7);
+        font-size: 30px;
+        user-select: none;
+        position: fixed; 
+        left: 20px;
+        z-index: 101;
+    }
+
+    #menu {
+        ul {
+            display: none;
+            list-style: none;
+            background: v.$color-footer;
+            position: fixed; 
+            top: 0;
+            right: -300px; 
+            width: 200px; 
+            height: 100vh;
+            padding: 70px 20px 20px;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 100;
+            transition: right 0.3s ease; 
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    #menu-toggle:checked ~ #menu ul {
+        display: flex;
+        left: 0; 
+    }
+
+    #menu a {
+        color: v.$color-texto-white;
+        text-decoration: none;
+        text-transform: v.$texto-trasnform;
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing: 1.874px;
+        font-family: v.$fuente-secundaria;
+        padding: 10px;
+        display: block;
+        border-radius: 4px;
+
+        &:hover {
+            background: v.$color-green-light;
+        }
+    }
+}
+
+// responsive
+
+@media (max-width: 768px) {
+
+    #menu {
+        ul {
+        width: 160px; 
+        }
+
+        a {
+            font-size: 10px;
+        }
+    }
+   
+}
