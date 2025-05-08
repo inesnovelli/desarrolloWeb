@@ -1,9 +1,10 @@
 @use '../abstracts/variables.scss' as v;
+@use '../abstracts/mixins.scss' as m;
 
 #care-instructions {
     h1 {
         color: v.$color-green-light;
-        text-transform: v.$texto-trasnform;
+        @include m.texto-transform;
         text-align: center;
         font-family: v.$fuente-terciaria;
         font-weight: 250;
@@ -39,11 +40,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             height: 200px;
             width: 100%;
-            transition: transform 0.5s ease;
-
-            &:hover {
-                transform: scale(1.05);
-            }
+            @include m.imagen-hover;
         }
 
         p {

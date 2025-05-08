@@ -1,17 +1,16 @@
 @use '../abstracts/variables.scss' as v;
+@use '../abstracts/mixins.scss' as m;
 
 #form {
-    display: flex;
+    @include m.flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     padding: 2rem;
     background-color: v.$color-fondo;
 
     h1 {
+        @include m.texto-transform;
         color: v.$color-texto-secundario;
-        text-transform: v.$texto-trasnform;
         font-family: v.$fuente-principal;
         font-weight: 300;
         font-size: 2rem;
@@ -34,7 +33,7 @@
         color: v.$color-texto-secundario;
         font-family: v.$fuente-principal;
         font-size: 0.75rem;
-        text-transform: v.$texto-trasnform;
+        @include m.texto-transform;
         letter-spacing: 0.5px;
         display: block;
         margin-bottom: 0.5rem;
@@ -89,7 +88,7 @@
         border-radius: 4px;
         font-family: v.$fuente-principal;
         font-size: 0.875rem;
-        text-transform: v.$texto-trasnform;
+        @include m.texto-transform;
         letter-spacing: 1px;
         cursor: pointer;
         transition: background-color 0.3s ease;

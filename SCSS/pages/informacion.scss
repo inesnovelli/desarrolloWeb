@@ -1,4 +1,5 @@
 @use '../abstracts/variables.scss' as v;
+@use '../abstracts/mixins.scss' as m;
 
 #encabezado {
     position: fixed;
@@ -18,7 +19,7 @@
 
     h1 {
         color: v.$color-borde;
-        text-transform: v.$texto-trasnform;
+        @include m.texto-transform;
         text-align: center;
         font-family: v.$fuente-terciaria;
         font-weight: 250;
@@ -51,15 +52,13 @@
 }
 
 .text-box-info {
+    @include m.flex-center;
     position: relative;
     height: 300px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(3, 3, 3, 0.1);
-    display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
     text-align: center;
     padding: 20px;
 
@@ -90,7 +89,7 @@
         margin-top: 10px;
         font-weight: bold;
         color: v.$color-green-light;
-        text-transform: v.$texto-trasnform;
+        @include m.texto-transform;
     }
 }
 
